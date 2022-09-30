@@ -1,5 +1,5 @@
-var name = prompt("Enter Name");
-var with_spaces = "With Spaces &nbsp;&nbsp;&nbsp;&nbsp;" + name + "  ";
-var without_spaces = "Without Spaces " + name.trim();
-document.getElementById('name1').innerHTML = with_spaces;
-document.getElementById('name2').innerHTML = without_spaces;
+
+document.getElementById('add').innerHTML = "4 + 4 = 8";
+document.getElementById('sub').innerHTML = "9 - 1 = 8";
+document.getElementById('mul').innerHTML = "4 * 2 = 8";
+document.getElementById('div').innerHTML = "16 / 2 = 8";
