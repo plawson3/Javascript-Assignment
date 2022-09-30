@@ -1,5 +1,3 @@
-
-document.getElementById('add').innerHTML = "4 + 4 = 8";
-document.getElementById('sub').innerHTML = "9 - 1 = 8";
-document.getElementById('mul').innerHTML = "4 * 2 = 8";
-document.getElementById('div').innerHTML = "16 / 2 = 8";
+var no = prompt('Enter Your Favourite Number: ');
+var msg = `Is ${no}, Your Favourite Number?`;
+document.getElementById('msg').innerHTML = msg;
