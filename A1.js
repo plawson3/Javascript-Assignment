@@ -12,6 +12,6 @@ var friendsEle = document.querySelector('#friendNames');
 
 for (let i = 0; i < list.length; i++) {
     let li = document.createElement('li');
-    li.textContent = list[i];
+    li.textContent = list[i].toUpperCase() + ", How are you doing today!!";
     friendsEle.append(li);
 }
