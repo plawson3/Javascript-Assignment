@@ -1,17 +1,8 @@
-var list = ['ali', 'amir', 'usama', 'ammad'];
-var friendsEle = document.querySelector('#friendNames');
-
-// let node = list.map(x => {
-//     let li = document.createElement('li');
-//     li.textContent = x;
-//     return li;
-// });
-
-
-// friendsEle.append(...node);
+var list = ['Honda Bike', 'Audi Car', 'Lamborgini Car', 'Ferrari Car', 'Private Jet'];
+var statement = document.querySelector('#statement');
 
 for (let i = 0; i < list.length; i++) {
-    let li = document.createElement('li');
-    li.textContent = list[i].toUpperCase() + ", How are you doing today!!";
-    friendsEle.append(li);
+    let p = document.createElement('p');
+    p.textContent = "I Would Like to own a " + list[i].toUpperCase();
+    statement.append(p);
 }
