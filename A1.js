@@ -7,11 +7,10 @@ else {
 }
 
 let grade = "";
-let marks = Number(prompt("Enter Your marks"));
+let marks = 0;//Number(prompt("Enter Your marks"));
 
-console.log(marks, typeof marks);
 
-if (marks > 0 && marks < 60) {
+if (marks >= 0 && marks < 60) {
     grade = "Better luck next Time, F";
 }
 else if (marks >= 60 && marks <= 70) {
@@ -29,5 +28,35 @@ else if (marks > 90 && marks <= 100) {
 else if (marks < 0 || marks > 100) {
     grade = "Wrong Marks";
 }
+console.log(grade);
+//document.getElementById('marks').innerHTML = grade;
 
-document.getElementById('marks').innerHTML = grade;
+//vale and type checking
+let mystring = "123";
+if (mystring === 123) {
+    console.log("True");
+}
+else {
+    console.log("False");
+}
+
+//upper and lower case checking 
+let mystring1 = "haris";
+if (mystring1.toUpperCase() === 'haris'.toLowerCase()) {
+    console.log(mystring1, "True");
+}
+else {
+    console.log(mystring1, "False");
+}
+
+const list = ['haris', 'ali', 'ammad', 'azhar', 'ashar'];
+if (list.includes('rehman')) {
+    console.log("rehman is located at index ", list.indexOf('rehman'), "True");
+}
+else if (list.includes("haris")) {
+    console.log("haris is in list at index ", list.indexOf('haris'));
+}
+else {
+    console.log("No Element Found");
+}
+
