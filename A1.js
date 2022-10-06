@@ -1,20 +1,17 @@
-let age = 1;
+let fruit_arr = ['apple', 'banana', 'grapes', 'pineapple', 'melon'];
 
-if (age < 2) {
-    console.log('baby');
+if (fruit_arr.includes("apple")) {
+    console.log(`I really like ${fruit_arr[fruit_arr.indexOf('apple')]}!`);
 }
-else if (age >= 2 && age < 4) {
-    console.log(' toddler');
+if (fruit_arr.includes("banana")) {
+    console.log(`I really like ${fruit_arr[fruit_arr.indexOf('banana')]}!`);
 }
-else if (age >= 4 && age < 13) {
-    console.log('kid');
+if (fruit_arr.includes("grapes")) {
+    console.log(`I really like ${fruit_arr[fruit_arr.indexOf('grapes')]}!`);
 }
-else if (age >= 13 && age < 20) {
-    console.log('teenager');
+if (fruit_arr.includes("pineapple")) {
+    console.log(`I really like ${fruit_arr[fruit_arr.indexOf('pineapple')]}!`);
 }
-else if (age >= 20 && age < 65) {
-    console.log('adult');
-}
-else if (age >= 65) {
-    console.log('elder');
+if (fruit_arr.includes("melon")) {
+    console.log(`I really like ${fruit_arr[fruit_arr.indexOf('melon')]}!`);
 }
