@@ -1,21 +1,14 @@
 let msg = document.querySelector('#tshirt');
-function city_country(name = 'Atif Aslam', title = 'Kuch is tarha') {
+function show_magicians(list) {
 
-    let dict = new Object();
-    dict["Name"] = name;
-    dict["Title"] = title;
-
-    for (const key in dict) {
+    for (const item in list) {
 
         let p = document.createElement('p');
-        p.textContent = ` ${key} : ${dict[key]}`;
+        p.textContent = `${list[item]}`;
         msg.append(p);
     }
-    msg.append(document.createElement('hr'));
 }
 
 
-city_country();
-city_country("In the End", "Linkin Park");
-// city_country("Sydney", "Australia");
-// city_country("Delhi", "India");
+const list = ['AMASIS', 'THE AMAZING JOHNATHAN', 'CRISS ANGEL', 'THEODORE ANNEMANN'];
+show_magicians(list);
