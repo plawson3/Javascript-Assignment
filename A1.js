@@ -1,9 +1,11 @@
 let msg = document.querySelector('#tshirt');
-function make_shirt(size = 'large', text = 'I Love JavaScript') {
+function describe_city(city = 'Karachi', county = 'Pakistan') {
     let p = document.createElement('p');
-    p.textContent = `The size of shirt is ${size} and Instruction is  ${text}`;
+    p.textContent = ` ${city} is in  ${county}`;
     msg.append(p);
 }
 
-make_shirt("Medium", "I Love C#");
-make_shirt();
+describe_city();
+describe_city("London", "Englan");
+describe_city("Sydney", "Australia");
+describe_city("Delhi", "India");
