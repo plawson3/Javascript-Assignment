@@ -1,11 +1,11 @@
 let msg = document.querySelector('#tshirt');
-function describe_city(city = 'Karachi', county = 'Pakistan') {
+function city_country(city = 'Karachi', county = 'Pakistan') {
     let p = document.createElement('p');
-    p.textContent = ` ${city} is in  ${county}`;
+    p.textContent = ` ${city}, ${county}`;
     msg.append(p);
 }
 
-describe_city();
-describe_city("London", "Englan");
-describe_city("Sydney", "Australia");
-describe_city("Delhi", "India");
+city_country();
+city_country("London", "Englan");
+city_country("Sydney", "Australia");
+city_country("Delhi", "India");
