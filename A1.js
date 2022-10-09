@@ -1,11 +1,14 @@
-let list = ['Admin', 'Eric', 'Teddy', 'Vernick', 'Houze'];
+const current_users = ['haris', 'ali', 'ammad', 'azhar', 'Ashar'];
+const new_users = ['amir', 'alishan', 'AMMAD', 'babar', 'ashar'];
 
-list.splice(0, list.length);
+for (let i = 0; i < current_users.length; i++) {
+    for (let j = 0; j < new_users.length; j++) {
+        if (current_users[i].toLowerCase().trim() != new_users[j].toLowerCase().trim()) {
+            console.log(`username is available ${current_users[i]}`);
+        }
+        else {
+            console.log(`enter a new username, this ${new_users[i]} username has already been taken!!!`);
+        }
 
-if (list.length > 0) {
+    }
 }
-else {
-    console.log("We need to find some users!");
-}
-
-
