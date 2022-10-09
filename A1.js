@@ -1,15 +1,7 @@
-for (let i = 0; i < 10; i++) {
+let list = ['Cheese Overload', 'Cheese Galore', 'Mission Impizzable'];
 
-    if (i == 1) {
-        console.log(`${i}st`);
-    }
-    else if (i == 2) {
-        console.log(`${i}nd`);
-    }
-    else if (i == 3) {
-        console.log(`${i}rd`);
-    }
-    else {
-        console.log(`${i}th`);
-    }
+for (let i = 0; i < list.length; i++) {
+    console.log(`I like pepperoni ${list[i]} pizza!!`);
 }
+console.log("I really love pizza!");
+
