@@ -1,22 +1,20 @@
-let arr1 = document.querySelector('#oldArr');
+let arr1 = document.querySelector('#car');
 
-function items(list) {
+function Car(...info) {
+    let obj = new Object();
+    obj["Manufacturar"] = info[0];
+    obj["Model"] = info[1];
+    obj["Color"] = info[2];
+    obj["HorsePower"] = info[3];
 
-    for (let i = 0; i < list.length; i++) {
-        let p = document.createElement('p');
-        p.textContent = list[i];
-        arr1.append(p);
-    }
+    return obj;
+
 }
 
-const list = [];
-while (true) {
-    let input = prompt('Enter Items you wants on sandwitch, Press Enter when done');
-    if (input != "") {
-        list.push(input);
-    }
-    else {
-        break;
-    }
+var Ferrari = Car("Ferrari", "G-17", "Black", "1500CC");
+for (let key in Ferrari) {
+    let p = document.createElement('p');
+    p.textContent = `${key} : ${Ferrari[key]}`;
+    arr1.append(p);
 }
-items(list);
+
