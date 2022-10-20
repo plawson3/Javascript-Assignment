@@ -1,16 +1,26 @@
 {
-  "dependencies": {
-    "inquirer": "^8.0.0"
-  },
-  "name": "calc-using-inquirer",
+  "name": "number-guessing-game",
   "version": "1.0.0",
-  "description": "testing inquirer npm package",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
-  "author": "Haris",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plawson3/Javascript-Assignment.git"
+  },
+  "author": "Haris Rehman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plawson3/Javascript-Assignment/issues"
+  },
+  "homepage": "https://github.com/plawson3/Javascript-Assignment#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
