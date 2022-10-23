@@ -1,23 +1,7 @@
 {
-  "name": "number-guessing-game",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/plawson3/Javascript-Assignment.git"
-  },
-  "author": "Haris Rehman",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/plawson3/Javascript-Assignment/issues"
-  },
-  "homepage": "https://github.com/plawson3/Javascript-Assignment#readme",
   "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@types/readline-sync": "^1.4.4",
     "typescript": "^4.8.4"
   },
   "dependencies": {
